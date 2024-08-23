@@ -1,0 +1,205 @@
+{
+    "intro": {
+            "text": "On a quiet Sunday morning, you slowly open your eyes to find yourself neatly placed on a cutting board, alongside an assortment of vegetables who share your confused expression. You are a young and capable potato with an appetite for adventure, but you don’t remember how you’ve come to find yourself in this precarious situation. You begin to take in your surroundings, and as things begin to come back into focus you remember your name. Spudnik.",
+            "next": "character_select",
+            "backgroundImage": "includes/images/intro.jpg",
+            "audio": "includes/music/intro.mp3"
+        },
+        "character_select": {
+            "text": "Time to choose your Spudnik. Will you be cunning Kennebec, a fearless Yukon Gold, or an inquisitive Russet?",
+            "options": [
+                {
+                    "text": "Choose Kennebec",
+                    "next": "reality_sets_in"
+                },
+                {
+                    "text": "Choose Yukon Gold",
+                    "next": "reality_sets_in"
+                },
+                {
+                    "text": "Choose Russet",
+                    "next": "reality_sets_in"
+                }
+            ],
+            "backgroundImage": "includes/images/character_select.jpg"
+        },
+        "reality_sets_in": {
+            "text": "As you get your bearings, reality starts to set in. This was never where you thought you’d end up. Ever since you were unearthed, you’ve envisioned one day being planted and creating some baby spuds of your own. Currently, however, you seem to be dangerously close to ending up as Dinner rather than Dad! You’ve got to think fast if you want to get out of this mess.",
+            "next": "countertop_quandary",
+            "backgroundImage": "includes/images/reality_sets_in.jpg",
+            "audio": "includes/music/neutral.mp3"
+        },
+        "countertop_quandary": {
+            "text": "“Focus”, you tell yourself. Best to take this one step at a time. One wrong move and it could be game over. First thing’s first, you’ve got to get off this countertop and out of sight. You scan your surroundings, thinking tactically. You see a vining houseplant draped across the windowsill, an oven mitt next to the stove, a ladle balanced against the wall by the edge of the table… '",
+            "options": [
+                {
+                    "text": "Use the ladle as a slide",
+                    "next": "dining_table_dash"
+                },
+                {
+                    "text": "Use the houseplant as a zipline",
+                    "next": "bookshelf_breakaway"
+                }
+                
+            ],
+            "backgroundImage": "includes/images/countertop_quandary.jpg"
+        },
+        "bookshelf_breakaway": {
+            "text":"You go for the houseplant. It looks like it hasn’t been watered in a while, and you pray that it’s strong enough to hold your weight. Suddenly, you hear some shuffling in the other room. It’s now or never. You tear a piece of your tough tater skin off, wincing in pain, and hook it over the vine. You take a big breath and jump. You’ve never felt such a rush. Halfway through your descent, the skin tears in half! You tumble through the air, landing hard on the ground. Everything goes black. Spuds!",
+            "next": "wake_up",
+            "backgroundImage": "includes/images/bookshelf_breakaway.jpg"
+        },
+        "wake_up": {
+            "text":"You regain consciousness after your tater tumble. Your eyes refocus, revealing a desolate and dirty place, a gloomy purgatory where you wouldn’t condemn even your most hated enemy. You’re on the floor. A collection of figures are making their way towards you. Before you can protest, they usher you under the bookshelf. Do you…",
+            "options": [
+                {
+                    "text": "Have faith in the unknown",
+                    "next": "trust_the_dust"
+                },
+                {
+                    "text": "Fear the worst",
+                    "next": "fear_the_worst"
+                }
+            ],
+            "backgroundImage": "includes/images/wake_up.jpg",
+            "audio": "includes/music/mrWhiskers.mp3"
+        },
+        "fear_the_worst": {
+            "text": "Fear the worst. Whatever, whoever they are, they mean surely to boil you, and mash you, and stick you in a stew. You’ver not traveled so far just to become stew! You jump to your feet, burst free of their grasp and burst out from under the bookshelf!",
+            "next": "critical_blunder",
+            "backgroundImage": "includes/images/fear_the_worst.jpg"
+        },
+        "critical_blunder": {
+            "text": "You’re free of the mysterious figures and in the open. Unfortunately, you’ve traded fear for doom. It seems whatever you’ve just asked from wasn’t the only one alerted by your tumble from the counter. Standing there over you is the worst of all fates: The Kitchen Baron. She scoops you up, and you’re boiled, mashed and stewed. Oh the Irony! GAME OVER",
+            "backgroundImage": "includes/images/critical_blunder.jpg"
+        },
+        "trust_the_dust": {
+            "text": "You allow yourself to be taken under the bookshelf. There, hidden away from prying eyes, they reveal themselves. It’s a family of dust bunnies! As a child during your time in the supermarket, you’d heard stories of these gentle benevolent beings. Lady Spudluck has smiled upon you it seems. The dust bunnies tell you about an air vent behind the couch that leads to the garden, and offer to guide you. Having not much left to lose, you’re grateful for their assistance and follow them.",
+            "next": "the_friends_we_made_along_the_way",
+            "backgroundImage": "includes/images/trust_the_dust.jpg",
+            "audio": "includes/music/neutralHappy.mp3"
+        },
+        "the_friends_we_made_along_the_way": {
+            "text": "You and the bunnies set off. You listen to their tales of adventures, mishaps and everything in between. They tell you about the comings and goings of “cookbooks”, vegetable torture bibles of sorts. They talk politics. The Kale Cabal, The Zucchini Insurgency overthrowing The Great Daikon Dynasty. It fascinates you. After an eternity, you arrive under the couch. The dust bunnies greet some distant relatives who live there. The couch dusties point out a window left ajar behind a tall cabinet, and a vent next to a wooden bench. You decide…",
+            "options": [
+                {
+                    "text": "The vent's right there, I'm going for it",
+                    "next": "the_vent1"
+                },
+                {
+                    "text": "I'm in the mood for a climb",
+                    "next": "the_china_cabinet1"
+                }
+            ],
+            "backgroundImage": "includes/images/the_friends_we_made_along_the_way.jpg"
+        },
+        "the_vent1": {
+            "text": "You decide to take the vent. A few of the dust bunnies have grown very fond of you throughout your travels together, and decide they want to see what the world has to offer outside the house. They follow you into the vent. They all cheer as they see the natural sunlight creeping into the vent, but stop abruptly as they round a corner. Just before the exit is a fan, spinning wildly. An attempt to pass through would mean certain death.",
+            "next": "the_vent2",
+            "backgroundImage": "includes/images/the_vent.jpg",
+            "audio": "includes/music/gameOver.mp3"
+        },
+        "the_vent2": {
+            "text": "You see the pain on the faces of your new friends, some of them are beginning to disintegrate in front of you as a result of the gust. You take a deep breath, put on a brave face, and hurl yourself into the fan. The blades nearly cut clean through you, but you’ve managed to stop the spinning. You yell at the dusties to run through well they still can. They do, some in shock and some crying their dusty tears. They look back in recognition before jumping into the unknown. Your eyes slowly close and everything goes black. Stories are told for generations about The Legend of Spudnik, the martyr tater. GAME OVER",
+            "backgroundImage": "includes/images/the_vent.jpg"
+        },
+        "the_china_cabinet1": {
+            "text": "You reach the window, rest for a moment and set off. It takes what little strength you have left to scale the cabinet, but you take advantage of a white doily draped haphazardly along the sides. You pause halfway up to take in the view, realizing how far you’ve come. But you can’t shake the feeling something dreadful is coming. You reach the top and pull yourself over the edge, greeted by a cool breeze that you’ve not felt before.",
+            "next": "the_china_cabinet2",
+            "backgroundImage": "includes/images/the_china_cabinet1.jpg",
+            "secondaryBackgroundImage": "includes/images/the_china_cabinet2.jpg",
+            "audio": "includes/music/mrWhiskers.mp3"
+        },
+        "the_china_cabinet2": {
+            "text": "You sigh in relief. Someone else sighs as well. Or something else. And you’re not certain it was a sigh. Gingerly, you pivot and come face to face with a great, toothy, whiskery, tuna stinking beast. You look into its eyes and see nothing but death, despair and pleasure in the pain of others. You suppress a scream and steal a split second to think... ",
+            "options":[
+                {
+                    "text": "Sneak attack!",
+                    "next": "here_there_be_monsters1"
+                },
+                {
+                    "text": "Cowar like a coward",
+                    "next": "here_there_be_monsters2"
+                }
+            ]
+        },
+        "here_there_be_monsters1": {
+            "text": "You both sit there, staring at each other. You’re not backing down. You’ve not traversed the entire house to be stopped by a spoiled furry brat. You summon your courage and bait the trap with a convincing “PsssPsss”. The beast lowers its guard, intrigued, and then you strike. With all your might, you plant a smack right on its wet nose and dive for the window. ",
+            "next": "smelly_sacrifice",
+            "backgroundImage": "includes/images/here_there_be_monsters1.jpg"
+        },
+        "smelly_sacrifice": {
+            "text": "Mr. Whiskers did not like that at all! His curious gaze instantly changes to disgust. As you drop out of the window, a fuzzy paw accompanied by 5 daggers dig into your back, and you’re hoisted back inside. You curse your hubris, knowing it’s all over. You’ve been through hell and back for what exactly? What fate has befallen you? Mr. Whiskers carries you down to the floor, and plunks you in a box of… stinky sand? You’re not sure. He removes your legs in one swipe, sending a clear message that you’ll pay for your insolence with the rest of your days. You ride out the rest of eternity as a decoration in Mr. Whiskers’ litter box. A totem in a smelly little zen garden. GAME OVER",
+            "backgroundImage": "includes/images/smelly_sacrifice.jpg",
+            "audio": "includes/music/gameOver.mp3"
+        },
+        "here_there_be_monsters2": {
+            "text": "Neither you or the beast blinks. Your eyes are locked on each other, the only sound is a subtle breeze coming through the window. The more you look into those mesmerizing eyes, the less you fear. You swear you can see loneliness in there. You gulp down your fear, close your eyes and give Mr. Whiskers a scratch under the chin…",
+            "next": "the_planting1",
+            "backgroundImage": "includes/images/cowar_like_a_coward.jpg"
+        },
+        "the_planting1": {
+            "text": "Mr. Whiskers’ tone changes from aggressive to soothing and flops over onto his back, his walls tumbling down like Jericho. You’re not sure what’s happening, but you’ve yet to be devoured. After a while, Mr. Whiskers stands up and once more stare into your eyes. He seems to understand your dilemma. And with that, he gently collects you in his jaws and hops through the window. He silently carries you through the garden, sunlight washing over you for the first time. It’s then that the sweet embrace of inner peace washes over you. You’ve overcome every trail, trouble and doubt, and it’s led you here.",
+            "next": "the_planting2",
+            "backgroundImage": "includes/images/the_planting1.jpg",
+            "audio": "includes/music/winner.mp3"
+        },
+        "the_planting2": {
+            "text": " Mr. Whiskers stops in a rich, earthy patch of unoccupied garden and digs you a little hole with his paws. He gently deposits you inside, and you share one last gaze of recognition. He covers you back up with earth. Your journey is complete. Three months later, you sprout into a formidable jungle of green, producing the most prolific harvest of spuds the garden had ever seen.  GAME OVER. YOU WERE PLANTED!",
+            "backgroundImage": "includes/images/the_planting2.jpg"
+        },
+        "dining_table_dash": {
+            "text": "You use the ladle. You carefully position it to land precisely between the kitchen table and the counter, creating a bridge. You hear some shuffling in the other room. It’s now or never. You draw in a sharp breath and roll down the ladle’s handle. Picking up speed, you make it to the table, and the momentum sends you careening into a large ceramic bowl in the center of the table. Momentarily dazed, a shadow takes shape over you. You look up, and lock eyes with a great hulking onion.",
+            "next": "the_auspicious_onion",
+            "backgroundImage": "includes/images/dining_table_dash.jpg"
+        },
+        "the_auspicious_onion": {
+            "text": "The onion, who introduces himself as Wise Ol' Onion, bellows with laughter when you explain your attempt at escape. He says 'I used to be an adventurer like you. Then, well…' and trails off. He does however share some valuable insight, after he has adequately ridiculed your plan. 'My dear Spudnik,' the onion begins in a deep, resonant voice, 'escaping this kitchen requires not just bravery but also cunning. I've seen many vegetables come and go, and I've learned a thing or two about the paths you should take. Listen carefully, and I'll help you earn your freedom'",
+            "next": "go_high",
+            "backgroundImage": "includes/images/the_auspicious_onion.jpg"
+        },
+        "go_high":{
+            "text":" Wise Ol’ tells of “The High Road”, an age-old smuggler’s route attempted by many, succeeded by few. He tells you that you must climb the china cabinet, making use of the white doilies as ladders. Upon reaching the top, there’s a window that sits permanently opened. That’s your way out. But beware, he warns. Legend has it that the final stretch is the most treacherous. Legend has it that among the higher vantage points in the house there prowls a beast so vicious it strikes fear into the heart of even the most stoic fruits. “Probably a myth”, he chuckles.",
+            "next": "go_low",
+            "backgroundImage": "includes/images/go_high.jpg"
+        },
+        "go_low": {
+            "text": "Wise Ol’ tells of “The Frozen Tunnel”. It’s new and untested, he warns. He says he watched quite recently as the kitchen baron had a new, more efficient Veggie-Morgue installed, and the gossip is that there’s a gap large enough to squeeze through in the wall behind it. 'You look scrawny enough to fit through!', he bellows, 'But you’ll be in plain sight of any and all dangers'.",
+            "options":[
+                {
+                    "text": "I'm not scared of hights! I think..",
+                    "next": "the_high_road"
+                },
+                {
+                    "text": "I'll prove that tunnel is no joke.",
+                    "next": "the_frozen_tunnel"
+                }
+            ],
+            "backgroundImage": "includes/images/go_low.jpg"
+        },
+        "the_high_road": {
+            "text": "You listen to what Ole’ Wise describes and decide the Frozen Tunnel sounds too risky. You opt for the window. “I knew ye didn’t have it in ya!” cries Ole’ Wise. You protest, but his eyes have half closed already. It seems your faintheartedness has put him to sleep. You sigh, silently thank him and begin trekking towards the china cabinet. You try not to think much about the stories he told of a demonic beast, quietly praying they were the delusions of an old soul yearning for the excitement of danger. You put it out of mind and trek on.",
+            "next": "the_china_cabinet1",
+            "backgroundImage": "includes/images/going_high.jpg"
+        },
+        "the_frozen_tunnel": {
+            "text": "After hearing what Wise Ol’ has to say, you’re drawn to the possibility of a swift escape, and opt to confront the Frozen Tunnel. “You’re a brave spuddy,” Wise Ol’ Onion remarks. “Just be quick and keep your eyes peeled! Good Luck”. He makes sure the coast is clear, and you brave the drop for the table. You make your way to the side of the Veggie-Morgue, the muffled cries for help emanating from within send a chill down your peel. You squeeze behind, and locate the hole in the wall. Suddenly filled with energy, you dash through the short tunnel and launch yourself out of the house…",
+            "next": "the_spuds_they_carried1",
+            "backgroundImage": "includes/images/the_frozen_tunnel1.jpg",
+            "secondaryBackgroundImage": "includes/images/the_frozen_tunnel2.jpg",
+            "audio": "includes/music/slowThenFast.mp3"
+        },
+        "the_spuds_they_carried1": {
+            "text": "You open your eyes after a soft landing. You go from euphoric to confused to terrified a few times as you begin to piece together what’s going on. You are, in fact, outside. But this is no garden. This is a vast expanse of green. You recall somewhere hearing the term “grass”. And trampling around on said “grass” appears to be a herd of miniature, dirtier, louder kitchen barons! They’re giggling with delight as they throw objects at each other, and you shudder in horror when you realize what...",
+            "next": "the_spuds_they_carried2",
+            "backgroundImage": "includes/images/the_spuds_they_carried1.jpg",
+            "audio": "includes/music/gameOver.mp3"
+            
+        },
+        "the_spuds_they_carried2": {
+            "text": "Veggies! Fruits! Eggs! Some are familiar faces. Look, there goes Benedict, sailing through the air and exploding on the forehead of one of the little gremlins. Before you can run, you’re scooped up by a ponytailed gremlin and launched, a chorus of cheers from them all following you. You have been used as an instrument of war, a catalyst of youthful laughter in a food fight. Not really what you’d planned for your life, but not the worst way to go out either. GAME OVER",
+            "backgroundImage": "includes/images/the_spuds_they_carried2.jpg"
+
+        }
+}
+

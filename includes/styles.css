@@ -1,0 +1,186 @@
+/* set full height for the HTML and body, apply backdrop image */
+html, body { 
+    height: 100%;  /* full height for the viewport */
+    margin: 0;  /* remove default margin */
+    padding: 0;  /* remove default padding */
+    background-image: url('images/backdropOriginal.jpg');  /* set background image */
+    background-size: cover;  /* cover the entire background */
+    background-position: center;  /* center the background image */
+    background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+/* styling for the dynamic background image that changes with each story frame */
+#background {
+    display: none;  /* initially hide the background */
+    background-size: cover;  /* cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100%;  /* full height for the container */
+    position: relative;  /*position relative to parent container */
+    overflow-x: auto;  /* Allow horizontal scrolling if content overflows **FIX THIS TIME PERMITTING** */
+    white-space: nowrap;  /* prevent wrapping */
+}
+
+/* ensure the background image fills the entire #background element */
+#background img {
+    width: 100%;  /* full width */
+    height: 100%;  /* full height */
+    object-fit: cover;  /* cover the entire element */
+}
+
+/* styling for the story text container */
+#story-text {
+    width: 80%;  /* 80% of the container's width */
+    z-index: 2;  /* ensure it's above other content */
+    padding: 1rem;  /* padding inside the container */
+    border-radius: 1rem;  /* round corners */
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);  /* subtle shadow for depth */
+    background: rgba(255, 255, 255, 0.8);  /* semi-transparent white background */
+    backdrop-filter: blur(2px);  /* slight blur effect behind the text */
+    overflow-y: auto;
+    height: auto; 
+    display: none;  /* initially hide story text */
+}
+
+/* styling for the options container */
+#options {
+    width: 95%;  /* 95% of the container's width */
+    margin-top: 20px;  /* spacing at the top */
+    z-index: 2;  /* ensure it's above other content */
+    display: flex; 
+    justify-content: space-evenly;  /* evenly distribute options across width of screen*/
+}
+
+/* margin for buttons within the #options container */
+.btn {
+    margin: 5px;  /* small margin around buttons */
+}
+
+/* styling for story text */
+p {
+    font-family: 'Apple Chancery', sans-serif;  /* custom font */
+    font-size: 1.6rem; 
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);  /* white shadow for contrast */
+}
+
+/* styling for custom buttons */
+.custom-btn {
+    background: url('images/spudBig.png') no-repeat center center;  /* image to be used as button's body */
+    background-size: cover;  /* cover the entire button */
+    border: none;  /* remove default border */
+    padding: 30px;  /* padding around the button content */
+    width: 110px;  /* fixed width */
+    height: 95px;  /* fixed height */
+    color: transparent;  /* hide text color (overridden by span) */
+    position: relative;  /* position relative for overlay text */
+    cursor: pointer;  /* pointer cursor on hover */
+}
+
+/* styling for the container holding the start button */
+#start-button-container {
+    position: fixed;  /* fixed position relative to the viewport */
+    top: 50%;  /* center vertically */
+    left: 50%;  /* center horizontally */
+    transform: translate(-50%, -50%);  /* fffset by 50% of its own size to center */
+    z-index: 10;  /* ensure it's above other content */
+}
+
+/* styling for the text overlay inside the custom button */
+.custom-btn span {
+    font-family: 'Sparks Meganik', sans-serif;  /* custom font for overlay text */
+    font-size: 1.2rem;  
+    position: absolute;  
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;  
+    text-shadow: 2px 2px 4px black;  /* black shadow for contrast */
+    text-align: center;  /* center-align text */
+    white-space: normal;  /* allow text wrapping */
+    width: 90%;  /* ensure text stays within the button */
+    line-height: 1.2;  /* line height for better readability */
+}
+
+/* change opacity when hovering over the custom button */
+.custom-btn:hover {
+    opacity: 0.8;  /* slightly dim button on hover */
+}
+
+/* hide the pillar images by default */
+#pillar,
+#horizontal-pillar {
+    display: none;  /* hide both vertical and horizontal pillars */
+}
+
+/* styling for the vertical pillar on larger screens */
+#pillar {
+    position: absolute;  /* absolute position within the container */
+    top: 0;  /* align with the top of the container */
+    left: 50%;  /* center horizontally */
+    transform: translateX(-50%);  /* Offset to fully center */
+    width: 140px;  /* fixed width */
+    height: 100%;
+    background: url('images/pillarBetter.png') no-repeat center center;  /*pillar image */
+    background-size: cover; 
+    z-index: 3; 
+}
+
+/* styling for the horizontal pillar on smaller screens */
+#horizontal-pillar {
+    position: absolute;  /* absolute position within the container */
+    top: 40%;  /* position from the top of the container */
+    left: 0;  /* align with the left edge of the container */
+    width: 100%;  /* full width */
+    height: 75px;  /* fixed height */
+    background: url('images/pillar4.png') no-repeat center center;  /* horizontal pillar image */
+    background-size: cover;  /* cover the entire pillar */
+    z-index: 3;  /* ensure it's above most other content */
+}
+
+/* layout for tablets (medium-sized screens) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .container-fluid {
+        flex-direction: row;  /* flex row layout for tablets */
+    }
+    #textContainer {
+        width: 50%;  /* ytext container takes up half the screen width */
+        height: 100%;  /* full height */
+    }
+    #background {
+        display: none;  /* hide the background on tablets */
+        width: 50%;  /* background takes up half the screen width */
+        height: 100%;  /* full height */
+    }
+}
+
+/* Layout for phones / smaller screens */
+@media (max-width: 767px) {
+    .container-fluid {
+        flex-direction: column;  /* flex column layout for small screens */
+    }
+    #textContainer {
+        width: 100%;  /* text container takes up full screen width */
+        height: 100vh;  /* full viewport height */
+    }
+
+    #background {
+        display: none;  /* hide the background on small screens */
+        width: 100%;  /* background takes up full screen width */
+        height: 100vh;  /* full viewport height */
+        overflow-x: scroll !important;  /* Allow horizontal scrolling **FIX THIS** */
+    }
+    #story-text {
+        width: 100%;  /* text container takes up full screen width */
+        height: auto;  /* auto height based on content */
+    }
+   
+    #horizontal-pillar {
+        left: 0;  /* align with the left edge of the container */
+        top: 50%;  /* center vertically */
+    }
+
+    p {
+        font-size: 1.5rem;  /* slightly smaller font size for paragraphs on small screens */
+    }
+}
